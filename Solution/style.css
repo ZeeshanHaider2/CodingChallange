@@ -43,7 +43,9 @@ nav {
 #dropdown.active {
   display: block;
 }
-
+li {
+  list-style: none;
+}
 body {
   padding-top: 50px;
   padding-right: 30px;
@@ -61,11 +63,6 @@ body {
 #time {
   color: rgb(41, 99, 99);
 }
-
-ul {
-  overflow: auto;
-}
-
 ul li {
   list-style-type: none;
   float: left;
