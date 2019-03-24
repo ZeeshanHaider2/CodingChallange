@@ -1,4 +1,4 @@
-quoteOfDay = () => {
+let quoteOfDay = () => {
   const quoteUrl = "https://api.myjson.com/bins/19l9p.json";
   const getQuotePromise = fetch(quoteUrl);
 
