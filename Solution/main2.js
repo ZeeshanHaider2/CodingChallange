@@ -4,7 +4,13 @@ let ourHeadLine = document.getElementById("alpha");
 
 let newHeading = document.getElementById("myText");
 
-let changeHeading = () => (ourHeadLine.innerHTML = newHeading.value);
+let changeHeading = () => {
+  ourHeadLine.innerHTML = newHeading.value;
+  if (newHeading.value === "" || newHeading.value === "Change title...") {
+    //if someone eneters empty string
+    alert("type something");
+  }
+};
 const myButton = document.getElementById("my-button");
 myButton.addEventListener("click", changeHeading);
 //______________________________________________________________________________//

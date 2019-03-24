@@ -4,10 +4,10 @@ let quoteOfDay = () => {
 
   getQuotePromise.then(data => {
     data.json().then(allQuotes => {
-      //restApi has been converted into JS object, which is saved in allQuotes. We will shuffle the allQuotes i.e.objects by using math.random method to get a single random Js object.
-      let shuffeledQuotes =
+      //restApi has been parsed and converted into JS object, which has been  saved in allQuotes. We will shuffle the allQuotes i.e.objects by using math.random method to get a single random Js object.
+      let shuffeledQuote =
         allQuotes[Math.floor(Math.random() * allQuotes.length)];
-      let y = '"' + shuffeledQuotes.quote + '" - ' + shuffeledQuotes.author;
+      let y = '"' + shuffeledQuote.quote + '" - ' + shuffeledQuote.author;
       document.getElementById("quote").innerHTML = y;
     });
   });
