@@ -85,3 +85,10 @@ ul li a i {
 ul li a i:hover {
   opacity: 0.7;
 }
+
+
+.gamma {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 2px;
+}
