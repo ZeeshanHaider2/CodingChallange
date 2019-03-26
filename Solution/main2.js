@@ -16,29 +16,6 @@ myButton.addEventListener("click", changeHeading);
 //______________________________________________________________________________//
 
 //CODE FOR DROPDOWN AND SELECTING BACKGROND COLORS
-document.getElementById("menu").addEventListener("click", openMenu);
-
-function openMenu() {
-  document.getElementById("dropdown").classList.toggle("active");
-  let listItems = document
-    .getElementById("dropdown")
-    .getElementsByTagName("li");
-  for (i = 0; i < listItems.length; i++) {
-    listItems[i].addEventListener("click", changeColor);
-    function changeColor() {
-      i = i < colors.length ? ++i : 0;
-      document.querySelector("body").style.background = colors[i];
-    }
-  }
-}
-
-let colors = [
-  "#0040ff;",
-  "#ff9999",
-  "#bf00ff",
-  "#00bfff",
-  "#936c6c",
-  "#ffff00",
-  "#80ff00",
-  "#00ffbf"
-];
+document.querySelector("#menu").addEventListener("change", function() {
+  document.body.style.backgroundColor = this.value;
+});

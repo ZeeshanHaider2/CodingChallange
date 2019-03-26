@@ -6,46 +6,48 @@
     <title>WireDelta Coding Challange</title>
     <link rel=stylesheet href=style.css type=text/css />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">  
   </head>
 
   <body> 
-    <nav>
-      <div>
+   <nav align= "center">
+
         <h1 id = "alpha">My Day</h1>
-
-     </div>
-        <ul class = "menu-ctn"> 
-          <input type="text" id="myText" value="Change title...">
+    
+     <div>
+        <select id="menu" style="float: left" >
+          <option value="#0040ff">color 1</option>
+          <option value="#ff9999">color 2</option>
+          <option value="#bf00ff">color 3</option>
+          <option value="#00bfff">color 4</option>
+          <option value="#936c6c">color 5</option>
+          <option value="#ffff00">color 6</option>
+          <option value="#80ff00">color 7</option>
+          <option value="#00ffbf">color 8</option>
+        </div>
+       
+    
+        <div align = "center">
+          <input type="text" id="myText" value="Change title..." >
           <button  id = "my-button" type="button" class="btn btn-secondary">Button</button>
-
-             <li id = "menu" style="float: right"> Press Dropdown Menu
-               <ul id = "dropdown">
-                  <li>Color1</li>
-                  <li>Color2</li>
-                  <li>Color3</li>
-                  <li>Color4</li>
-                  <li>Color5</li>
-                  <li>Color6</li>
-               </ul>
-              </li> 
-        </ul>
-    </nav>
+         </div>
+   
+   </nav>
     
    <div  align="center">
-    <div id="date" ></div>
-    <div id="time"></div></br>
-    <div id="beta">Today's Tasks</div>
-    <div><ol id ="task-list"></ol> </div></br>
-    <button id="task-button" type="button" class="btn btn-warning">See Tomorrow´s Tasks</button></br></br>
-    <div><ol id ="task-list2"></ol> </div></br>
-    <button id="quote-button" type="button" class="btn btn-warning" >Fetch QuoteOfTheDay</button></br></br>
-    <div id="quote"></div></br></br>
-    <div><a target="_blank" href="https://zeeshanhaider2.github.io/CodingChallange/Solution/crud.html">CRUD operation</a> </div>
-    
+      <br><br><div id="date" ></div>
+      <div id="time"></div></br>
+      <div id="beta">Today's Tasks</div>
+      <div><ol id ="task-list"></ol></div></br>
+      <button id="task-button" type="button" class="btn btn-warning">See Tomorrow´s Tasks</button></br></br>
+      <div><ol id ="task-list2"></ol> </div></br>
+      <button id="quote-button" type="button" class="btn btn-warning" >Fetch QuoteOfTheDay</button></br></br>
+      <div id="quote"></div></br></br>
+      <div><a target="_blank" href="https://zeeshanhaider2.github.io/CodingChallange/Solution/crud.html">CRUD operation</a> 
+ 
   </div>
-    <footer >
+  
+    <footer>
         <ul style="float: right">
             <li><a href="http://facebook.com/"><i class="fa fa-facebook"></i></a></li>
             <li><a href="http://linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
