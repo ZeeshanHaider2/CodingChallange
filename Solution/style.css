@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 nav {
   background-color: rgb(64, 123, 172);
   display: flex;
@@ -7,6 +12,19 @@ nav {
   padding-left: 30px;
   padding-top: 30px;
   padding-bottom: 0px;
+}
+
+.menu-ctn > li {
+  display: inline-block;
+  background-color: gray;
+  padding: 5px 8px;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+.menu-ctn li:hover {
+  cursor: pointer;
+  background-color: cadetblue;
 }
 
 #dropdown {
@@ -22,6 +40,9 @@ nav {
   padding: 5px 2px;
 }
 
+#dropdown.active {
+  display: block;
+}
 li {
   list-style: none;
 }
