@@ -9,25 +9,10 @@ nav {
   padding-bottom: 0px;
 }
 
-#dropdown {
-  display: none;
-  position: absolute;
-  background-color: cornflowerblue;
-  z-index: 2;
-  text-align: center;
-  left: 0;
-  top: 100%;
-}
-#dropdown li {
-  padding: 5px 2px;
-}
-
-#dropdown.active {
-  display: block;
-}
 li {
   list-style: none;
 }
+
 body {
   padding-top: 50px;
   padding-right: 30px;
@@ -39,12 +24,15 @@ body {
   font-size: 30px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
 #date {
   color: rgb(41, 99, 99);
 }
+
 #time {
   color: rgb(41, 99, 99);
 }
+
 ul li {
   list-style-type: none;
   float: left;
@@ -61,9 +49,11 @@ ul li a i {
   margin-right: 10px;
   padding-top: 15%;
 }
+
 ul li a i {
   transition: all 0.2s ease-in-out;
 }
+
 ul li a i:hover {
   opacity: 0.7;
 }
@@ -72,4 +62,10 @@ ul li a i:hover {
   border: 1px solid black;
   padding: 20px;
   margin: 2px;
+}
+
+#border {
+  border: 2px solid black;
+  padding: 20px;
+  margin: 12px;
 }
